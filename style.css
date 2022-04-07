@@ -73,10 +73,9 @@ blockquote {
   margin-bottom: 25px;
 }
 .box h2{
-  color: #227c74;
+  color: #00708e;
   font-size: 1.5em;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 #awards,
@@ -182,7 +181,7 @@ blockquote {
   font-weight: bold;
 }
 .job .description{
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 .job .highlights{
   padding: 5px 0;
@@ -260,7 +259,7 @@ blockquote {
   font-size: .85em;
 }
 .skill-level {
-  background-color: #227c74;
+  background-color: #00708e;
   border-radius: 4px;
   color: #fff;
   padding: 1px 8px;

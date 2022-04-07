@@ -86,7 +86,7 @@ function render(resumeObject) {
                 p.iconClass = "fas fa-rss";
                 break;
             case "gitlab":
-                p.iconClass = "fab fa-gitlab";
+                p.iconClass = "fa-brands fa-gitlab";
                 break;
             case "keybase":
                 p.iconClass = "fas fa-key";

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume of {{basics.name}}</title>
+    <title>{{basics.name}}</title>
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -39,14 +39,14 @@
           {{#basics.summary}}
           <!-- ABOUT ME -->
           <div class="box">
-            <h2><i class="fas fa-user ico"></i> About</h2>
+            <h2><i class="fas fa-user ico"></i> A propos</h2>
             <p>{{{basics.summary}}}</p>
           </div>
           {{/basics.summary}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box">
-            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+            <h2><i class= "fas fa-suitcase ico"></i> Experiences professionnelles</h2>
             {{#work}}
               <div class="job clearfix">
                 <div class="row">
@@ -150,7 +150,7 @@
           {{#projectsBool}}
           <!-- PROJECTS -->
           <div class="box">
-            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+            <h2><i class= "fas fa-code-branch ico"></i> Projets</h2>
             <ul class="list-group">
               {{#projects}}
               <li class="list-group-item">
@@ -198,6 +198,25 @@
             </div>
             {{/basics.profiles}}
           </div>
+          {{#skillsBool}}
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fas fa-tasks ico"></i> Compétences</h2>
+            {{#skills}}
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  {{name}}
+                  {{#level}}<span class="skill-level">{{level}}</span>{{/level}}
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                {{#keywords}}
+                <span class= "skill badge">{{{.}}}</span>
+                {{/keywords}}
+              </div>
+            </div>
+            {{/skills}}
+          </div>
+          {{/skillsBool}}
           {{#educationBool}}
           <!-- EDUCATION -->
           <div class="box">
@@ -235,25 +254,6 @@
             </ul>
           </div>
           {{/educationBool}}
-          {{#skillsBool}}
-          <!-- SKILLS -->
-          <div class="box">
-            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
-            {{#skills}}
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  {{name}}
-                  {{#level}}<span class="skill-level">{{level}}</span>{{/level}}
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                {{#keywords}}
-                <span class= "skill badge">{{{.}}}</span>
-                {{/keywords}}
-              </div>
-            </div>
-            {{/skills}}
-          </div>
-          {{/skillsBool}}
           {{#publicationsBool}}
           <!-- PUBLICATIONS -->
           <div class="box">

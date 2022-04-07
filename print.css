@@ -1,6 +1,7 @@
 body {
   font-size: .95em;
   -webkit-print-color-adjust: exact;
+  background-color: red;
 }
 
 a[href]:after {
@@ -89,3 +90,13 @@ blockquote,
   border-width: 4px;
   pointer-events: none;
  }
+
+ .skill-level {
+  background-color: #00708e;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
